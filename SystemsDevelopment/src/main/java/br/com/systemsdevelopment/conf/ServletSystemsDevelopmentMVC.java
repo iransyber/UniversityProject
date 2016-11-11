@@ -7,13 +7,16 @@ public class ServletSystemsDevelopmentMVC extends AbstractAnnotationConfigDispat
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		// TODO Auto-generated method stub
-		return new Class[]{AppWebConfig.class};
+		return null;
 	}
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
 		// TODO Auto-generated method stub
-		return null;
+		return new Class[]{
+							AppWebConfig.class, 
+							JPAConfiguration.class
+						  };
 	}
 
 	@Override

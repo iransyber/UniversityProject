@@ -27,13 +27,50 @@
 		<groupId>org.springframework</groupId>
 		<artifactId>spring-webmvc</artifactId>
 		<version>4.1.0.RELEASE</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-orm</artifactId>
+	    <version>4.1.0.RELEASE</version>
 	</dependency>	
+		
+	<!-- Driver postgre -->
+	<!-- https://mvnrepository.com/artifact/org.lucee/postgresql -->
+	<dependency>
+	    <groupId>org.lucee</groupId>
+	    <artifactId>postgresql</artifactId>
+	    <version>8.3-606.jdbc4</version>
+	</dependency>
+	    
+	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+	<!-- Hibernate -->
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-core</artifactId>
+	    <version>5.1.0.Final</version>
+	</dependency>
+	
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-entitymanager</artifactId>
+        <version>5.1.0.Final</version>
+    </dependency>
+    
+    <dependency>
+    	<groupId>org.hibernate.javax.persistence</groupId>
+    	<artifactId>hibernate-jpa-2.1-api</artifactId>
+    	<version>1.0.0.Final</version>
+    </dependency>
+    
 	<dependency>
 		<groupId>org.apache.tomcat</groupId>
 		<artifactId>tomcat-servlet-api</artifactId>
 		<version>8.0.36</version>
 		<scope>provided</scope>
 	</dependency>
+	
 	<dependency>
 		<groupId>javax.servlet.jsp</groupId>
 		<artifactId>jsp-api</artifactId>
