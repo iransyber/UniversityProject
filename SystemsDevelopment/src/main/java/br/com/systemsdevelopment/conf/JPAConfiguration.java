@@ -38,7 +38,7 @@ public class JPAConfiguration {
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory(){
 		LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
 		em.setDataSource(dataSource());
-		em.setPackagesToScan("br.com.systemsdevelopment.model");
+		em.setPackagesToScan("br.com.systemdevelopment.model");
 		
 		JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
 		em.setJpaVendorAdapter(vendorAdapter);

@@ -1,19 +1,12 @@
 package br.com.systemdevelopment.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
+import javax.persistence.*;
 //Esta classe serve para indicar se e livro,revista etc...
 //A mesma criarei dependencia para o item como indicado no uml da documentação.
 //Irei documentar a modificação e enviar para os envolvidos.
 
 @Entity
-@Table(name = "Categoria")
-public class Categora {
+public class Categoria {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "IdCategoria")
