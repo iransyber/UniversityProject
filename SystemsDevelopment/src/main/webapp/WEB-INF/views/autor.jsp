@@ -4,9 +4,29 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Autor</title>
+<title>Autores</title>
 </head>
 <body>
-
+	<form method="post" action="/SystemsDevelopment/salvarautor">
+		<div>
+			<label for="Descricao">Nome</label>
+			<input type="text" name="Nome" id="Nome"/>
+		</div>
+		<div>
+			<label for="Descricao">Data de Nascimento</label>
+			<input type="text" name="DataNascimento" id="DataNascimento"/>
+		</div>
+		<div>
+			<label for="Descricao">Especialidade Literária</label>
+			<input type="text" name="EspecialidadeLiteraria" id="EspecialidadeLiteraria"/>
+		</div>
+		<div>
+			<label for="Descricao">Status</label>
+			<input type="text" name="Status" id="Status"/>
+		</div>
+		<div>
+			<input type="submit" value="Cadastrar">
+		</div>		
+	</form>
 </body>
 </html>
