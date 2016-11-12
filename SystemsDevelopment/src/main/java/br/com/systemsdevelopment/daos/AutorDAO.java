@@ -12,12 +12,14 @@ public class AutorDAO {
 	@PersistenceContext
 	private EntityManager manager;
 	
-	public void save(Autor autor){
+	public void salvar(Autor autor){
 		manager.persist(autor);
 	}
 	
-	public void remove(int idAutor){
-		//manager.remove(id);
+	public void remover(int idAutor){
+		Autor a = new Autor();
+		a = manager.find(Autor.class, idAutor);
+		manager.remove(a);	
 	}
 
 }

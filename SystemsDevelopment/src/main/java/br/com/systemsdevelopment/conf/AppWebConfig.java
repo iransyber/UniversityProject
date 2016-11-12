@@ -7,6 +7,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import br.com.systemsdevelopment.controllers.HomeController;
 import br.com.systemsdevelopment.daos.AutorDAO;
 import br.com.systemsdevelopment.daos.CategoriaDAO;
+import br.com.systemsdevelopment.daos.EditoraDAO;
 import br.com.systemsdevelopment.daos.GlobalFactoryEntity;
 
 @EnableWebMvc
@@ -14,7 +15,8 @@ import br.com.systemsdevelopment.daos.GlobalFactoryEntity;
 										HomeController.class,
 										AutorDAO.class,
 										GlobalFactoryEntity.class,
-										CategoriaDAO.class
+										CategoriaDAO.class,
+										EditoraDAO.class
 									})
 public class AppWebConfig {
 	@Bean

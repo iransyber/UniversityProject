@@ -6,8 +6,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import br.com.systemdevelopment.model.Categoria;
-import br.com.systemsdevelopment.daos.CategoriaDAO;
-
+import br.com.systemsdevelopment.daos.CategoriaDAO; 
 @Controller
 @Transactional
 public class CategoriaController {
@@ -24,5 +23,11 @@ public class CategoriaController {
 	public String SalvarCategoria(Categoria categoria){
 		context.salvar(categoria);
 		return "paginaconfirmacao";
+	}
+	
+	@RequestMapping("/removercategoria")
+	public String RemoverCategoria(int idCategoria){
+		context.remover(idCategoria);
+		return "exclusoes";
 	}
 }
