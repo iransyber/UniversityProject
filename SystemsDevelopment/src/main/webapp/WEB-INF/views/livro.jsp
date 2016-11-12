@@ -20,22 +20,22 @@
 			<label for="Descricao">Sinopse</label>
 			<input type="text" name="Sinopse" id="Sinopse"/>
 		</div>
-		<div>
+		
 		<div>
 			<label for="Descricao">Autor</label>
 			<input type="text" name="Autor" id="Autor"/>
 		</div>
-		<div>
+		
 		<div>
 			<label for="Descricao">Editora</label>
 			<input type="text" name="Editora" id="Editora"/>
 		</div>
-		<div>
+		
 		<div>
 			<label for="Descricao">AnoLancamento</label>
 			<input type="text" name="AnoLancamento" id="AnoLancamento"/>
 		</div>
-		<div>	
+			
 		<div>
 			<label for="Descricao">Quantidade</label>
 			<input type="text" name="Quantidade" id="Quantidade"/>
