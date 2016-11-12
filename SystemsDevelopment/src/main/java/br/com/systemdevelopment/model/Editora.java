@@ -1,11 +1,18 @@
 package br.com.systemdevelopment.model;
 
-import java.util.Date;
+import javax.persistence.*;
 
+@Entity
 public class Editora {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "IdEditora")
 	private int IdEditora;
+	@Column(name = "Descricao")
 	private String Descricao;
-	private Date Ano;
+	@Column(name = "Ano")
+	private int Ano;
+	@Column(name = "Status")
 	private int Status;
 	public int getIdEditora() {
 		return IdEditora;
@@ -19,10 +26,10 @@ public class Editora {
 	public void setDescricao(String descricao) {
 		Descricao = descricao;
 	}
-	public Date getAno() {
+	public int getAno() {
 		return Ano;
 	}
-	public void setAno(Date ano) {
+	public void setAno(int ano) {
 		Ano = ano;
 	}
 	public int getStatus() {

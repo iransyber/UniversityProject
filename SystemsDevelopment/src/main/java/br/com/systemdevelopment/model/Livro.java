@@ -1,14 +1,32 @@
 package br.com.systemdevelopment.model;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.*;
+
+@Entity
 public class Livro {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "IdLivro")
 	private int IdLivro;
+	@Column(name = "Descricao")
 	private String Descricao;
+	@Column(name = "Categoria")
 	private int Categoria;
+	@Column(name = "Sinopse")
 	private String Sinopse;
+	@Column(name = "Autor")
 	private int Autor;
+	@Column(name = "Editora")
 	private int Editora;
+	@Column(name = "AnoLancamento")
 	private int AnoLancamento;
+	@Column(name = "Quantidade")
 	private int Quantidade;
+	@Column(name = "Ativo")
 	private Boolean Ativo;
 	
 	public String getSinopse() {
