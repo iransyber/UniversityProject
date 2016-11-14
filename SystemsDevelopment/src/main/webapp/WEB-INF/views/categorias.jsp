@@ -12,6 +12,7 @@
 	<br>
 	<a href="/SystemsDevelopment/categorianovo">+Nova Categoria</a>
 	<br>
+	
 	<table cellspacing="1" border="1" cellpadding="1">
 		<tr>
 			<td>Código</td>
@@ -26,7 +27,7 @@
 				<td>${categoriaitem.descricao}</td>
 				<td>${categoriaitem.status}</td>
 				<td><a href="/SystemsDevelopment/categoriabyid?codigo=${categoriaitem.getIdCategoria()}">Editar</a></td>
-				<td><a href="">Excluir</a></td>
+				<td><a href="/SystemsDevelopment/removercategoria?idCategoria=${categoriaitem.getIdCategoria()}">Excluir</a></td>
 			</tr>
 		</c:forEach>
 	</table>

@@ -8,5 +8,7 @@
 </head>
 <body>
 	<h1>Salvo com sucesso!!</h1>
+	<br>
+	<a href="/SystemsDevelopment/categorias">Voltar</a>	
 </body>
 </html>

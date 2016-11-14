@@ -4,13 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Editar Categoria</title>
 </head>
 <body>
-	<form action="/SystemsDevelopment/editacategoria">
+	<form method="post" action="/SystemsDevelopment/editacategoria">
 		<div>
 			<label for="idcategoria">Código</label>
-			<input type="text" name="idcategoria" id="idcategoria"  value="${categoriaeditar.getIdCategoria()}" />
+			<input type="text" name="IdCategoria" id="IdCategoria" value="${categoriaeditar.getIdCategoria()}" />
 		</div>
 		<div>
 			<label for="descricao">Descrição</label>
@@ -20,7 +20,8 @@
 			<label for="status">Status</label>
 			<input type="text" name="status" id="status" value="${categoriaeditar.status}" />
 		</div>	
-		<input type="submit" value="Alterar">			
+		<input type="submit" value="Alterar">
+		<a href="/SystemsDevelopment/categorias">Voltar</a>		
 	</form>
 </body>
 </html>

@@ -42,7 +42,7 @@ public class CategoriaController {
 	@RequestMapping("/editacategoria")
 	public String editarCategoria(Categoria categoria) {
 		context.EditarCategoria(categoria);
-		return "categorias";
+		return "redirect:categorias";
 	}	
 	
 	@RequestMapping("/categoriabyid")

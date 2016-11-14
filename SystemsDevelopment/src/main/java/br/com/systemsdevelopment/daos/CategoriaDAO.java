@@ -28,7 +28,9 @@ public class CategoriaDAO {
 	public void EditarCategoria(Categoria categoria){
 		Categoria c = new Categoria();
 		c = manager.find(Categoria.class, categoria.getIdCategoria());
-		manager.refresh(c);
+		c.setDescricao(categoria.getDescricao());
+		c.setStatus(categoria.getStatus());
+		manager.persist(c);
 	}	
 	
 	public void remover(int idCateg){

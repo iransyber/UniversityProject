@@ -7,6 +7,8 @@
 <title>Excluido</title>
 </head>
 <body>
-	<h1>Excluido com sucesso!!</h1>
+	<h1>Excluido com Sucesso!!</h1>
+	<br>
+	<a href="/SystemsDevelopment/categorias">Voltar</a>
 </body>
 </html>
