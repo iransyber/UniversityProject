@@ -25,8 +25,8 @@
 				<td>${categoriaitem.getIdCategoria()}</td>
 				<td>${categoriaitem.descricao}</td>
 				<td>${categoriaitem.status}</td>
-				<td><input type="button" value="Editar" onclick=""></td>
-				<td><input type="button" value="Excluir"/></td>
+				<td><a href="/SystemsDevelopment/categoriabyid?codigo=${categoriaitem.getIdCategoria()}">Editar</a></td>
+				<td><a href="">Excluir</a></td>
 			</tr>
 		</c:forEach>
 	</table>

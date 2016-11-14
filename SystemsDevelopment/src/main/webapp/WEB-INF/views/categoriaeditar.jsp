@@ -7,18 +7,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="">
+	<form action="/SystemsDevelopment/editacategoria">
 		<div>
 			<label for="idcategoria">Código</label>
-			<input type="text" name="idcategoria" id="idcategoria">
+			<input type="text" name="idcategoria" id="idcategoria"  value="${categoriaeditar.getIdCategoria()}" />
 		</div>
 		<div>
 			<label for="descricao">Descrição</label>
-			<input type="text" name="descricao" id="descricao">
+			<input type="text" name="descricao" id="descricao" value="${categoriaeditar.descricao}" />
 		</div>
 		<div>
 			<label for="status">Status</label>
-			<input type="text" name="status" id="status">
+			<input type="text" name="status" id="status" value="${categoriaeditar.status}" />
 		</div>	
 		<input type="submit" value="Alterar">			
 	</form>
