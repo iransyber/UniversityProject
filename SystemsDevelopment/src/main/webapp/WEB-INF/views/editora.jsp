@@ -23,8 +23,9 @@
 		</tr>
 		<c:forEach items="${editoraslista}" var="editoraitem">
 			<tr>
-				<td>${editoraitem.getIdCategoria()}</td>
+				<td>${editoraitem.getIdEditora}</td>
 				<td>${editoraitem.descricao}</td>
+				<td>${editoraitem.ano}</td>
 				<td>${editora.status}</td>
 				<td><a href="/SystemsDevelopment/categoriabyid?codigo=${categoriaitem.getIdCategoria()}">Editar</a></td>
 				<td><a href="/SystemsDevelopment/removercategoria?idCategoria=${categoriaitem.getIdCategoria()}">Excluir</a></td>
