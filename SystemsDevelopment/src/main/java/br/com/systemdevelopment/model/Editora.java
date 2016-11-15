@@ -8,12 +8,13 @@ public class Editora {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "IdEditora")
 	private int IdEditora;
-	@Column(name = "Descricao")
+	@Column(name ="Descricao")
 	private String Descricao;
 	@Column(name = "Ano")
 	private int Ano;
 	@Column(name = "Status")
 	private int Status;
+	
 	public int getIdEditora() {
 		return IdEditora;
 	}

@@ -32,17 +32,17 @@ public class CategoriaController {
 		return "exclusoes";
 	}
 	
+	@RequestMapping("/editacategoria")
+	public String editarCategoria(Categoria categoria) {
+		context.EditarCategoria(categoria);
+		return "redirect:categorias";
+	}
+	
 	@RequestMapping("/categorias")
 	public ModelAndView Listar() {
 		ModelAndView modelv = new ModelAndView("categorias");
 		modelv.addObject("categoriaslista", context.ListarCategorias());
 		return modelv;
-	}
-	
-	@RequestMapping("/editacategoria")
-	public String editarCategoria(Categoria categoria) {
-		context.EditarCategoria(categoria);
-		return "redirect:categorias";
 	}	
 	
 	@RequestMapping("/categoriabyid")
