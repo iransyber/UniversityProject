@@ -12,6 +12,7 @@ import br.com.systemsdevelopment.daos.EditoraDAO;
 import br.com.systemsdevelopment.daos.EspecialidadeLiterariaDAO;
 import br.com.systemsdevelopment.daos.GlobalFactoryEntity;
 import br.com.systemsdevelopment.daos.LivroDAO;
+import br.com.systemsdevelopment.daos.LocacaoDAO;
 import br.com.systemsdevelopment.daos.UsuarioDAO;
 
 @EnableWebMvc
@@ -23,7 +24,8 @@ import br.com.systemsdevelopment.daos.UsuarioDAO;
 										EditoraDAO.class,
 										LivroDAO.class,
 										UsuarioDAO.class,
-										EspecialidadeLiterariaDAO.class
+										EspecialidadeLiterariaDAO.class,
+										LocacaoDAO.class
 									})
 public class AppWebConfig {
 	@Bean

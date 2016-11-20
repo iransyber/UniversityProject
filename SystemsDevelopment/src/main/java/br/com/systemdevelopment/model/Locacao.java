@@ -25,7 +25,7 @@ public class Locacao {
 	@Column (name = "Observacoes")
 	private String Observacoes;
 	@Column (name = "DevolAtrasada")
-	private Boolean DevolAtrasada;
+	private int DevolAtrasada;
 	
 	public int getIdLocacao() {
 		return IdLocacao;
@@ -63,10 +63,10 @@ public class Locacao {
 	public void setObservacoes(String observacoes) {
 		Observacoes = observacoes;
 	}
-	public Boolean getDevolAtrasada() {
+	public int getDevolAtrasada() {
 		return DevolAtrasada;
 	}
-	public void setDevolAtrasada(Boolean devolAtrasada) {
+	public void setDevolAtrasada(int devolAtrasada) {
 		DevolAtrasada = devolAtrasada;
 	}
 }
