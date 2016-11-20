@@ -8,29 +8,31 @@ public class Editora {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "IdEditora")
 	private int IdEditora;
-	@Column(name = "Descricao")
-	private String Descricao;
-	@Column(name = "Ano")
-	private int Ano;
-	@Column(name = "Status")
+	@Column(name = "Nome)")
+	private String Nome;
+	@Column(name ="Observacoes")
+	private String Observacoes;
+	@Column(name ="Status")
 	private int Status;
+	
+	
 	public int getIdEditora() {
 		return IdEditora;
 	}
 	public void setIdEditora(int idEditora) {
 		IdEditora = idEditora;
 	}
-	public String getDescricao() {
-		return Descricao;
+	public String getNome() {
+		return Nome;
 	}
-	public void setDescricao(String descricao) {
-		Descricao = descricao;
+	public void setNome(String nome) {
+		Nome = nome;
 	}
-	public int getAno() {
-		return Ano;
+	public String getObservacoes() {
+		return Observacoes;
 	}
-	public void setAno(int ano) {
-		Ano = ano;
+	public void setObservacoes(String observacoes) {
+		Observacoes = observacoes;
 	}
 	public int getStatus() {
 		return Status;
@@ -38,4 +40,5 @@ public class Editora {
 	public void setStatus(int status) {
 		Status = status;
 	}
+
 }

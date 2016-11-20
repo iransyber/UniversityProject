@@ -9,17 +9,17 @@
 <body>
 	<form method="post" action="/SystemsDevelopment/salvareditora">
 		<div>
-			<label for="Descricao">Descrição</label>
-			<input type="text" name="Descricao" id="Descricao"/>
+			<label for="Nome">Nome</label>
+			<input type="text" name="Nome" id="Nome"/>
 		</div>
 		<div>
-			<label for="Descricao">Ano</label>
-			<input type="text" name="Ano" id="Ano"/>
+			<label for="Nome">Observacoes</label>
+			<input type="text" name="Observacoes" id="Observacoes"/>
 		</div>
-				<div>
-			<label for="Descricao">Status</label>
+		<div>
+			<label for="Status">Status</label>
 			<input type="text" name="Status" id="Status"/>
-		</div>
+		</div>	
 		<div>
 			<input type="submit" value="Cadastrar">
 		</div>		
