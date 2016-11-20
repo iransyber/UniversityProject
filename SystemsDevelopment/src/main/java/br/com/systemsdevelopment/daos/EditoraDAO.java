@@ -29,8 +29,8 @@ public class EditoraDAO {
 	public void EditarEditora(Editora editora){
 		Editora e = new Editora();
 		e = manager.find(Editora.class, editora.getIdEditora());
-		e.setDescricao(editora.getDescricao());
-		e.setAno(editora.getAno());
+		e.setNome(editora.getNome());
+		e.setObservacoes(editora.getObservacoes());
 		manager.persist(e);
 	}
 	

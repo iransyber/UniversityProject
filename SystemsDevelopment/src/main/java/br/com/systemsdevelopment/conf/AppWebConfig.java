@@ -4,12 +4,15 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
+
 import br.com.systemsdevelopment.controllers.HomeController;
 import br.com.systemsdevelopment.daos.AutorDAO;
 import br.com.systemsdevelopment.daos.CategoriaDAO;
 import br.com.systemsdevelopment.daos.EditoraDAO;
+import br.com.systemsdevelopment.daos.EspecialidadeLiterariaDAO;
 import br.com.systemsdevelopment.daos.GlobalFactoryEntity;
 import br.com.systemsdevelopment.daos.LivroDAO;
+import br.com.systemsdevelopment.daos.UsuarioDAO;
 
 @EnableWebMvc
 @ComponentScan(basePackageClasses = {
@@ -18,7 +21,9 @@ import br.com.systemsdevelopment.daos.LivroDAO;
 										GlobalFactoryEntity.class,
 										CategoriaDAO.class,
 										EditoraDAO.class,
-										LivroDAO.class
+										LivroDAO.class,
+										UsuarioDAO.class,
+										EspecialidadeLiterariaDAO.class
 									})
 public class AppWebConfig {
 	@Bean

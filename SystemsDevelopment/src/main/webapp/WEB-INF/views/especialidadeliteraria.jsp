@@ -4,21 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Autores</title>
+<title>Especialidades Literárias</title>
 </head>
 <body>
-	<form method="post" action="/SystemsDevelopment/salvarautor">
+	<form method="post" action="/SystemsDevelopment/salvarespecialidadeliteraria">
 		<div>
-			<label for="Nome">Nome</label>
-			<input type="text" name="Autor" id="Autor"/>
-		</div>
-		<div>
-			<label for="DataNascimento">Data de Nascimento</label>
-			<input type="text" name="DataNascimento" id="DataNascimento"/>
-		</div>
-		<div>
-			<label for="EspecialidadeLiteraria">Especialidade Literária</label>
-			<input type="text" name="EspecialidadeLiteraria" id="EspecialidadeLiteraria"/>
+			<label for="Descricao">Descrição</label>
+			<input type="text" name="Descricao" id="Descricao"/>
 		</div>
 		<div>
 			<label for="Status">Ativo</label>

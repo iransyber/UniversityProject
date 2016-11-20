@@ -33,7 +33,8 @@ public class EditoraController {
 		return "exclusoes";
 	}
 	
-	@RequestMapping("/editareditora")public String editarEditora(Editora editora){
+	@RequestMapping("/editareditora")
+	public String editarEditora(Editora editora){
 		context.EditarEditora(editora);
 		return "redirect:editoras";
 	}
