@@ -9,7 +9,7 @@ import br.com.systemsdevelopment.daos.AutorDAO;
 import br.com.systemsdevelopment.daos.CategoriaDAO;
 import br.com.systemsdevelopment.daos.EditoraDAO;
 import br.com.systemsdevelopment.daos.GlobalFactoryEntity;
-import br.com.systemsdevelopment.daos.LivroDAO;
+import br.com.systemsdevelopment.daos.ItemDAO;
 
 @EnableWebMvc
 @ComponentScan(basePackageClasses = {
@@ -18,7 +18,7 @@ import br.com.systemsdevelopment.daos.LivroDAO;
 										GlobalFactoryEntity.class,
 										CategoriaDAO.class,
 										EditoraDAO.class,
-										LivroDAO.class
+										ItemDAO.class
 									})
 public class AppWebConfig {
 	@Bean

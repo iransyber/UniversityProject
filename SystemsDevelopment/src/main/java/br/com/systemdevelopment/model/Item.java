@@ -7,11 +7,11 @@ import javax.persistence.Id;
 import javax.persistence.*;
 
 @Entity
-public class Livro {
+public class Item {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "IdLivro")
-	private int IdLivro;
+	@Column(name = "IdItem")
+	private int IdItem;
 	@Column(name = "Descricao")
 	private String Descricao;
 	@Column(name = "Categoria")
@@ -53,11 +53,11 @@ public class Livro {
 	public void setQuantidade(int quantidade) {
 		Quantidade = quantidade;
 	}
-	public int getIdLivro() {
-		return IdLivro;
+	public int getIdItem() {
+		return IdItem;
 	}
-	public void setIdLivro(int idLivro) {
-		IdLivro = idLivro;
+	public void setIdItem(int idItem) {
+		IdItem = idItem;
 	}
 	public String getDescricao() {
 		return Descricao;
