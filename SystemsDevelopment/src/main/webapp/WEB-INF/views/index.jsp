@@ -18,10 +18,10 @@
     <li><a href="#">Cadastros</a> 
       <ul> 
         <li><a href="/SystemsDevelopment/categorias">Categoria</a></li> 
-        <li><a href="/SystemsDevelopment/autornovo">Autor</a></li> 
-        <li><a href="/SystemsDevelopment/editoranovo">Editora</a></li> 
-        <li><a href="/SystemsDevelopment/especialidadeliterarianovo">Especialidade Literaria</a></li>
-        <li><a href="/SystemsDevelopment/usuarionovo">Usuario</a></li> 
+        <li><a href="/SystemsDevelopment/autores">Autor</a></li> 
+        <li><a href="/SystemsDevelopment/editoras">Editora</a></li> 
+        <li><a href="/SystemsDevelopment/especialidadesliterarias">Especialidade Literaria</a></li>
+        <li><a href="/SystemsDevelopment/usuarios">Usuario</a></li> 
       </ul> 
     </li>
     <li><a href="#">Sobre</a></li> 
