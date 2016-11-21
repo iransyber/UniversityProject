@@ -26,12 +26,17 @@ public class UsuarioDAO {
 	}
 	
 	public boolean UsuarioExiste(String usuario, String senha){
-		Query q = manager.createQuery("SELECT u FROM Usuario u where (u.Login="+usuario+") and (u.Senha="+senha+")");
-		Usuario u = (Usuario) q.getSingleResult();
-		if (u != null){
-			return true;
-		}else{
-			return false;			
+		Query q = manager.createQuery("SELECT u FROM Usuario u where (u.Login='"+usuario.toUpperCase()+"') and (u.Senha='"+senha.toUpperCase()+"')");
+		try {
+			Usuario u = (Usuario) q.getSingleResult();
+			if (u == null){
+				return false;
+			}else{
+				return true;			
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			return false;
 		}
 	}
 	

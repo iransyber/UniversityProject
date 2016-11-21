@@ -30,9 +30,9 @@ public class UsuarioController {
 	public String EfetuaLogin(String usuario, String senha){
 		String pagina = "";
 		if (context.UsuarioExiste(usuario, senha)){
-			pagina = "index";
+			pagina = "redirect: home";
 		}else{
-			pagina = "/";
+			pagina = "redirect: /SystemsDevelopment/";
 		}		
 	  return pagina;
 	}

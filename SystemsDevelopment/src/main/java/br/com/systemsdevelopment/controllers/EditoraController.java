@@ -19,7 +19,14 @@ public class EditoraController {
 	@RequestMapping("/editoranovo")
 	public String editora(){
 		return "editora";
-	}		
+	}	
+	
+	@RequestMapping("/editoras")
+	public ModelAndView Listar() {
+		ModelAndView modelv = new ModelAndView("editoras");
+		modelv.addObject("categoriaslista", context.ListarEditoras());
+		return modelv;
+	}
 	
 	@RequestMapping("/salvareditora")
 	public String SalvarEditora(Editora editora){
@@ -37,13 +44,6 @@ public class EditoraController {
 	public String editarEditora(Editora editora){
 		context.EditarEditora(editora);
 		return "redirect:editoras";
-	}
-	
-	@RequestMapping("/editora")
-	public ModelAndView Listar(){
-		ModelAndView modelv = new ModelAndView("editora");
-		modelv.addObject("editoraslista", context.ListarEditoras());
-		return modelv;
 	}
 	
 	@RequestMapping("/editorabyid")

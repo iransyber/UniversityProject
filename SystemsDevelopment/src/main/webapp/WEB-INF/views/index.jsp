@@ -44,6 +44,13 @@
     	Equipe Desenvolvedora:
 	    <ul>
 	       <li>Iran Junior</li>
+	       <li>Antonio Roberlanio Mota</li>
+	       <li>Bruno Paulino</li>
+	       <li>Fernando Soares</li>
+	       <li>Erivelton Chaves</li>
+	       <li>Marcelino Freitas</li>
+	       <li>Israel</li>
+	       
 	    </ul>
     </p> 
   </div>

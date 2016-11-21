@@ -9,6 +9,6 @@
 <body>
 	<h1>Salvo com sucesso!!</h1>
 	<br>
-	<a href="/SystemsDevelopment/categorias">Voltar</a>	
+	<a href="/SystemsDevelopment/home">Voltar</a>	
 </body>
 </html>

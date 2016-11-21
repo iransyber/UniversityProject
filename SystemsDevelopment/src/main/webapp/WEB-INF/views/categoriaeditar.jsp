@@ -1,12 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+ <%-- <%@ include file="" %>  --%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Editar Categoria</title>
 </head>
 <body>
+	<jsp:include page="/pages/menu.jsp"></jsp:include>
 	<form method="post" action="/SystemsDevelopment/editacategoria">
 		<div>
 			<label for="idcategoria">Código</label>
