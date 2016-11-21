@@ -26,6 +26,17 @@ public class UsuarioController {
 		return "paginaconfirmacao";
 	}
 	
+	@RequestMapping("/login")
+	public String EfetuaLogin(String usuario, String senha){
+		String pagina = "";
+		if (context.UsuarioExiste(usuario, senha)){
+			pagina = "index";
+		}else{
+			pagina = "/";
+		}		
+	  return pagina;
+	}
+	
 	@RequestMapping("/removerusuario")
 	public String RemoverUsuario(int idUsuario){
 		context.remover(idUsuario);

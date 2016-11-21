@@ -25,6 +25,16 @@ public class UsuarioDAO {
 		return u;
 	}
 	
+	public boolean UsuarioExiste(String usuario, String senha){
+		Query q = manager.createQuery("SELECT u FROM Usuario u where (u.Login="+usuario+") and (u.Senha="+senha+")");
+		Usuario u = (Usuario) q.getSingleResult();
+		if (u != null){
+			return true;
+		}else{
+			return false;			
+		}
+	}
+	
 	public void EditarUsuario(Usuario usuario){
 		Usuario u = new Usuario();
 		u = manager.find(Usuario.class, usuario.getIdUsuario());
