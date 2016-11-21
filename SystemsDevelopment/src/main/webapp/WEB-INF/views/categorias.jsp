@@ -20,8 +20,8 @@
 	<br>
 	<a href="/SystemsDevelopment/categorianovo"  class="btn btn-success">+Nova Categoria</a>
 	<br>
-	
-	<table  class="table">
+	<br>	
+	<table class="table" cellspacing="0" cellpadding="0">
 		<tr>
 			<td>Código</td>
 			<td>Descrição</td>
@@ -33,9 +33,10 @@
 			<tr>
 				<td>${categoriaitem.getIdCategoria()}</td>
 				<td>${categoriaitem.descricao}</td>
-				<td>${categoriaitem.status}</td>
-				<td><a href="/SystemsDevelopment/categoriabyid?codigo=${categoriaitem.getIdCategoria()}">Editar</a></td>
-				<td><a href="/SystemsDevelopment/removercategoria?idCategoria=${categoriaitem.getIdCategoria()}">Excluir</a></td>
+				<td>${categoriaitem.status}				
+				</td>
+				<td><a href="/SystemsDevelopment/categoriabyid?codigo=${categoriaitem.getIdCategoria()}" class="btn btn-warning">Editar</a></td>
+				<td><a href="/SystemsDevelopment/removercategoria?idCategoria=${categoriaitem.getIdCategoria()}" class="btn btn-danger">Excluir</a></td>
 			</tr>
 		</c:forEach>
 	</table>
