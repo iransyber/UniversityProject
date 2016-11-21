@@ -37,6 +37,20 @@
   </div>
 </nav>
 
+<div class="container">
+  <div class="jumbotron">
+    <h1>Sistema de Biblioteca</h1> 
+    <p>
+    	Equipe Desenvolvedora:
+	    <ul>
+	       <li>Iran Junior</li>
+	    </ul>
+    </p> 
+  </div>
+  <p>Todos os direitos reservados à SustemsDevelpment em 2016</p> 
+  <p>Documentation</p> 
+</div>
+
 <!--<ul id="nav"> 
     <li><a href="/SystemsDevelopment/home">Home</a></li> 
     <li><a href="/SystemsDevelopment/categorias">Categorias</a></li> 

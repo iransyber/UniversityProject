@@ -25,7 +25,7 @@
 					<input class="form-control" type="text" name="Descricao" id="Descricao"/>
 				</div>
 				<div>
-					<label for="Status">Ativo</label>
+					<label for="Status">Status</label>
 					<select class="form-control" name="Status" id="Status">
 					  <option value="1">Ativo</option>
 					  <option value="2">Inativo</option>
