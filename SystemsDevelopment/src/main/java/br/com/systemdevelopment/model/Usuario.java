@@ -1,14 +1,8 @@
 package br.com.systemdevelopment.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "Usuario")
 public class Usuario {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,8 +10,17 @@ public class Usuario {
 	private int IdUsuario;
 	@Column(name = "Nome")
 	private String Nome;
+	@Column(name ="Email")
+	private String Email;
+	@Column(name = "CPF")
+	private String CPF;
+	@Column(name = "Login")
+	private String Login;
+	@Column(name = "Senha")
+	private String Senha;
 	@Column(name = "Status")
 	private int Status;
+	
 	public int getIdUsuario() {
 		return IdUsuario;
 	}
@@ -30,12 +33,34 @@ public class Usuario {
 	public void setNome(String nome) {
 		Nome = nome;
 	}
+	public String getEmail() {
+		return Email;
+	}
+	public void setEmail(String email) {
+		Email = email;
+	}
+	public String getCPF() {
+		return CPF;
+	}
+	public void setCPF(String cPF) {
+		CPF = cPF;
+	}
+	public String getLogin() {
+		return Login;
+	}
+	public void setLogin(String login) {
+		Login = login;
+	}
+	public String getSenha() {
+		return Senha;
+	}
+	public void setSenha(String senha) {
+		Senha = senha;
+	}
 	public int getStatus() {
 		return Status;
 	}
 	public void setStatus(int status) {
 		Status = status;
 	}
-	
-
 }

@@ -1,46 +1,54 @@
 package br.com.systemsdevelopment.controllers;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
-@Entity
-@Table(name = "Usuario")
+import br.com.systemdevelopment.model.Usuario;
+import br.com.systemsdevelopment.daos.UsuarioDAO; 
+@Controller
+@Transactional
 public class UsuarioController {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "IdUsuario")
-	private int IdUsuario;
-	@Column(name = "Nome")
-	private String Nome;
-	@Column(name = "Status")
-	private int Status;
-	public int gerIdUsuario(){
-		return IdUsuario;
+
+	@Autowired
+	private UsuarioDAO context;
+	
+	@RequestMapping("/usuarionovo")
+	public String usuario(){
+		return "usuario";
 	}
 	
-	public void setIdUsuario(int IdUsuario){
-		IdUsuario = gerIdUsuario();	
+	@RequestMapping("/salvarusuario")
+	public String SalvarUsuario(Usuario usuario){
+		context.salvar(usuario);
+		return "paginaconfirmacao";
+	}
 	
- 	}
-	public String getNome(){
-		return Nome;
+	@RequestMapping("/removerusuario")
+	public String RemoverUsuario(int idUsuario){
+		context.remover(idUsuario);
+		return "exclusoes";
 	}
-	public int getIdUsuario() {
-		return IdUsuario;
+	
+	@RequestMapping("/editarUsuario")
+	public String editarUsuario(Usuario usuario) {
+		context.EditarUsuario(usuario);
+		return "redirect:usuario";
 	}
-
-	public int getStatus() {
-		return Status;
-	}
-
-	public void setNome(String nome){
-		Nome = nome;
-	}
-	public void setStatus(int status){
-		Status = status;
+	
+	@RequestMapping("/usuarios")
+	public ModelAndView Listar() {
+		ModelAndView modelv = new ModelAndView("usuarios");
+		modelv.addObject("usuarioslista", context.ListarUsuarios());
+		return modelv;
+	}	
+	
+	@RequestMapping("/usuariobyid")
+	public ModelAndView CatById(int codigo) {
+		ModelAndView modelv = new ModelAndView("usuarioeditar");
+		modelv.addObject("usuarioeditar", context.UsuarioById(codigo));
+		return modelv;
 	}
 }

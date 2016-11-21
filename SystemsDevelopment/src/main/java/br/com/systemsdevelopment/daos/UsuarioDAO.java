@@ -1,12 +1,12 @@
 package br.com.systemsdevelopment.daos;
 
 import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 import org.springframework.stereotype.Repository;
-
 import br.com.systemdevelopment.model.Usuario;
 
 @Repository
@@ -16,34 +16,37 @@ public class UsuarioDAO {
 	private EntityManager manager;
 	
 	public void salvar(Usuario usuario){
-		manager.persist(usuario);	
+		manager.persist(usuario);
 	}
 	
-	public Usuario usuarioById(int codigo){
+	public Usuario UsuarioById(int codigo){
 		Usuario u = new Usuario();
 		u = manager.find(Usuario.class, codigo);
 		return u;
 	}
+	
 	public void EditarUsuario(Usuario usuario){
 		Usuario u = new Usuario();
 		u = manager.find(Usuario.class, usuario.getIdUsuario());
 		u.setNome(usuario.getNome());
+		u.setEmail(usuario.getEmail());
+		u.setCPF(usuario.getCPF());
+		u.setLogin(usuario.getLogin());
+		u.setSenha(usuario.getSenha());
 		u.setStatus(usuario.getStatus());
-		manager.persist(u);		
-	}
+		manager.persist(u);
+	}	
 	
-	public void remover(int idUsuario){
+	public void remover(int idCateg){
 		Usuario u = new Usuario();
-		u = manager.find(Usuario.class, idUsuario);
-		manager.remove(u);	
+		u = manager.find(Usuario.class, idCateg);
+		manager.remove(u);
 	}
 	
-	public List<Usuario> ListarUsuario(){		
-		Query q = manager.createQuery("SELECT U FROM Categoria u");
+	public List<Usuario> ListarUsuarios() {
+		Query q = manager.createQuery("SELECT c FROM Usuario c");
 		@SuppressWarnings("unchecked")
 		List<Usuario> usuario = q.getResultList();
 		return usuario;
-		
 	}
 }
-
