@@ -50,7 +50,7 @@ public class JPAConfiguration {
 		Properties properties = new Properties();
 		properties.setProperty("hibernate.hbm2ddl.auto", "update");
 		properties.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
-		//properties.setProperty("javax.persistence.schema-generation.database.action", "drop-and-create");
+		properties.setProperty("javax.persistence.schema-generation.database.action", "drop-and-create");
 		properties.setProperty("hibernate.connection.shutdown", "true");
 		properties.setProperty("hibernate.format_sql", "true");	
 		return properties;

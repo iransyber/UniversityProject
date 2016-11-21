@@ -15,6 +15,7 @@ import br.com.systemsdevelopment.daos.LivroDAO;
 import br.com.systemsdevelopment.daos.LocacaoDAO;
 import br.com.systemsdevelopment.daos.UsuarioDAO;
 
+
 @EnableWebMvc
 @ComponentScan(basePackageClasses = {
 										HomeController.class,
