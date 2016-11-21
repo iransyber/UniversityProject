@@ -1,8 +1,6 @@
 package br.com.systemsdevelopment.daos;
 
 import java.util.List;
-import java.util.jar.Attributes.Name;
-
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
@@ -31,19 +29,16 @@ public class UsuarioDAO {
 		u = manager.find(Usuario.class, usuario.getIdUsuario());
 		u.setNome(usuario.getNome());
 		u.setStatus(usuario.getStatus());
-		manager.persist(u);
-		
+		manager.persist(u);		
 	}
 	
 	public void remover(int idUsuario){
 		Usuario u = new Usuario();
 		u = manager.find(Usuario.class, idUsuario);
-		manager.remove(u);
-	
+		manager.remove(u);	
 	}
 	
-	public List<Usuario> ListarUsuario(){
-		
+	public List<Usuario> ListarUsuario(){		
 		Query q = manager.createQuery("SELECT U FROM Categoria u");
 		@SuppressWarnings("unchecked")
 		List<Usuario> usuario = q.getResultList();

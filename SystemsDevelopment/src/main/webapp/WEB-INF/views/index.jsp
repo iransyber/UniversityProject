@@ -7,7 +7,24 @@
 <title>SystemsDevelopment</title>
 </head>
 <body>
-    
-
+<div>
+	<div>
+		<h1>Dashboad</h1>
+	</div>
+</div>
+<ul id="nav"> 
+    <li><a href="/SystemsDevelopment/home">Home</a></li> 
+    <li><a href="/SystemsDevelopment/categorias">Categorias</a></li> 
+    <li><a href="#">Cadastros</a> 
+      <ul> 
+        <li><a href="/SystemsDevelopment/categorias">Categoria</a></li> 
+        <li><a href="/SystemsDevelopment/autornovo">Autor</a></li> 
+        <li><a href="/SystemsDevelopment/editoranovo">Editora</a></li> 
+        <li><a href="/SystemsDevelopment/especialidadeliterarianovo">Especialidade Literaria</a></li>
+        <li><a href="/SystemsDevelopment/usuarionovo">Usuario</a></li> 
+      </ul> 
+    </li>
+    <li><a href="#">Sobre</a></li> 
+  </ul>
 </body>
 </html>
