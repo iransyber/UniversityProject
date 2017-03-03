@@ -42,45 +42,36 @@
 	    <groupId>org.lucee</groupId>
 	    <artifactId>postgresql</artifactId>
 	    <version>8.3-606.jdbc4</version>
-	</dependency>
-	
-<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
-<dependency>
-    <groupId>org.postgresql</groupId>
-    <artifactId>postgresql</artifactId>
-    <version>9.4.1211.jre7</version>
-</dependency>
-
-
-	
-	    
+	</dependency>	
+	<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+	<dependency>
+	    <groupId>org.postgresql</groupId>
+	    <artifactId>postgresql</artifactId>
+	    <version>9.4.1211.jre7</version>
+	</dependency>	    
 	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 	<!-- Hibernate -->
 	<dependency>
 	    <groupId>org.hibernate</groupId>
 	    <artifactId>hibernate-core</artifactId>
 	    <version>5.1.0.Final</version>
-	</dependency>
-	
+	</dependency>	
     <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-entitymanager</artifactId>
         <version>5.1.0.Final</version>
-    </dependency>
-    
+    </dependency>    
     <dependency>
     	<groupId>org.hibernate.javax.persistence</groupId>
     	<artifactId>hibernate-jpa-2.1-api</artifactId>
     	<version>1.0.0.Final</version>
-    </dependency>
-    
+    </dependency>    
 	<dependency>
 		<groupId>org.apache.tomcat</groupId>
 		<artifactId>tomcat-servlet-api</artifactId>
 		<version>8.0.36</version>
 		<scope>provided</scope>
-	</dependency>
-	
+	</dependency>	
 	<dependency>
 		<groupId>javax.servlet.jsp</groupId>
 		<artifactId>jsp-api</artifactId>
@@ -133,5 +124,10 @@
 		<version>1.2.16</version>
 		<scope>runtime</scope>
 	</dependency>
+	  <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjrt</artifactId>
+      <version>1.6.11</version>
+   </dependency>
   </dependencies>
 </project>
