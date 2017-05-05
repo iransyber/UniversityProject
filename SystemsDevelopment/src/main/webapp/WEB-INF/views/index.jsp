@@ -52,7 +52,6 @@
 	       <li>Israel</li>
 	       
 	    </ul>
-    </p> 
   </div>
   <p>Todos os direitos reservados à SustemsDevelpment em 2016</p> 
   <p>Documentation</p> 
