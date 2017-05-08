@@ -1,1 +1,1 @@
-web: java SystemsDevelopment
+web: java -jar target/SystemsDevelopment-sources.jar

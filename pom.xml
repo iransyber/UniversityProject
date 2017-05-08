@@ -4,7 +4,7 @@
   <groupId>org.SystemsDevelopment</groupId>
   <artifactId>SystemsDevelopment</artifactId>
   <version>1.0.0-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>war</packaging>  
   <build>
     <finalName>SystemsDevelopment</finalName>
     <plugins>
@@ -12,31 +12,23 @@
         <artifactId>maven-war-plugin</artifactId>
         <version>2.6</version> 
         <configuration>
-          <failOnMissingWebXml>false</failOnMissingWebXml>
-          
-                       <artifactItems>
-                            <artifactItem>
-                                <groupId>com.github.jsimone</groupId>
-                                <artifactId>webapp-runner</artifactId>
-                                <version>8.5.11.3</version>
-                                <destFileName>webapp-runner.jar</destFileName>
-                            </artifactItem>
-                        </artifactItems>
-          
+          <defaultGoal>install</defaultGoal>
+          <failOnMissingWebXml>false</failOnMissingWebXml>                 
         </configuration>
-      </plugin>
+      </plugin>     
       <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <version>2.4</version>
-                <executions>
-                    <execution>
-                        <id>copy-dependencies</id>
-                        <phase>package</phase>
-                        <goals><goal>copy-dependencies</goal></goals>
-                    </execution>
-                </executions>
-            </plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <phase>package</phase>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
   <properties>
